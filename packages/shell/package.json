@@ -5,14 +5,6 @@
   "author": "Phillip Zada <phillip.zada@servicesaustralia.gov.au>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/shell.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "gitlab-git@gitlab.csda.gov.au:experience-platform/workshops/single-spa-workshop.git"
@@ -23,7 +15,6 @@
     "lint": "eslint src --ext js,ts,tsx",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "prepare": "husky install",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc"
